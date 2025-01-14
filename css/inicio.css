@@ -95,3 +95,36 @@ h1{
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px; 
   }
+
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #555;
+  }
+
+  #seha {
+    height: 1em;
+  }
+
+  .btn-custom {
+    background-color: white; 
+    color: black; 
+    width: 40px;
+    height: 40px;
+  }
+
+  .btn-custom:hover {
+    background-color: #8a54ab; 
+    border-color: #8a54ab; 
+  }
+
+  #mostrar{
+    border-top-left-radius: 0px; 
+    border-bottom-left-radius: 0px;
+  }
+

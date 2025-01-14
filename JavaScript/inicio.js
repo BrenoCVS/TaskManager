@@ -17,3 +17,19 @@ signupButton.addEventListener("click", () => {
   signupForm.classList.add("active");
   loginForm.classList.remove("active");
 });
+
+function mostra() {
+    const camposenha = document.getElementById('senha')
+    const icone = document.getElementById("olho")
+
+    if (camposenha.getAttribute('type') == 'password') {
+      icone.classList.remove("bi-eye")
+      icone.classList.add("bi-eye-slash")
+      camposenha.setAttribute('type', 'text')
+
+    } else {
+      icone.classList.remove("bi-eye-slash")
+      icone.classList.add("bi-eye")
+      camposenha.setAttribute('type', 'password')
+    }
+  }

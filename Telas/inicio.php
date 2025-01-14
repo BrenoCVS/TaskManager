@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/inicio.css">
 </head>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
@@ -31,14 +31,12 @@
             <form id="login-form" class="active">
                 <div class="form-group">
                     <label for="login-email">Email</label>
-                    <input type="email" id="login-email" placeholder="Digite seu email" />
+                    <input type="email" id="login-email" placeholder="Digite seu email">
                 </div>
                 <div class="form-group">
                     <label for="login-password">Senha</label>
-                    <input
-                        type="password"
-                        id="login-password"
-                        placeholder="Digite sua senha" />
+                    <input type="password" id="login-password" placeholder="Digite sua senha">
+                    <button type="button" class="toggle-password" onclick="togglePassword('login-password')">👁️</button>
                 </div>
                 <button type="button" class="submit">Entrar</button>
             </form>
@@ -47,21 +45,23 @@
             <form id="signup-form">
                 <div class="form-group">
                     <label for="signup-name">Nome</label>
-                    <input type="text" id="signup-name" placeholder="Digite seu nome" />
+                    <input type="text" id="signup-name" placeholder="Digite seu nome">
                 </div>
                 <div class="form-group">
                     <label for="signup-email">Email</label>
-                    <input
-                        type="email"
-                        id="signup-email"
-                        placeholder="Digite seu email" />
+                    <input type="email" id="signup-email" placeholder="Digite seu email">
                 </div>
                 <div class="form-group">
                     <label for="signup-password">Senha</label>
-                    <input
-                        type="password"
-                        id="signup-password"
-                        placeholder="Crie uma senha" />
+
+                    <div class="row g-0 align-items-start">
+                        <div class="col-9">
+                            <input type="password" id="signup-password" placeholder="Crie uma senha">
+                        </div>
+                        <div class="col">
+                            <button type="button" id="mostrar" onclick="mostra()" class="btn btn-custom"><i class="bi bi-eye"></i></button>
+                        </div>
+                    </div>
                 </div>
                 <button type="button" class="submit">Cadastrar</button>
             </form>
